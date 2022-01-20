@@ -1,0 +1,151 @@
+@use "../../_variables.scss" as *;
+
+.bg {
+	background-color: #2a2a2c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: white;
+}
+
+.wrapper {
+	margin: 0 8%;
+	padding-left: 40px;
+
+	@media #{$mq-medium} {
+		margin: 0 15%;
+		padding-left: 50px;
+	}
+
+	@media #{$mq-large} {
+		margin: 0 20%;
+		padding-left: 60px;
+	}
+
+	@media #{$mq-xlarge} {
+		margin: 0 25%;
+		padding-left: 70px;
+	}
+}
+
+.floatText {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	font-family: "GothamBold";
+
+	@media #{$mq-large} {
+		top: 40px;
+		left: 140px;
+	}
+
+	@media #{$mq-xlarge} {
+		top: 40px;
+		left: 200px;
+	}
+}
+
+.zeppeliner {
+	max-width: 230px;
+	fill: white;
+}
+
+.bodyH1 {
+	font-size: $base-font-size * 2;
+	margin-bottom: 8px;
+
+	@media #{$mq-medium} {
+		font-size: $base-font-size * 2.5;
+	}
+
+	@media #{$mq-large} {
+		font-size: $base-font-size * 3;
+	}
+
+	@media #{$mq-xlarge} {
+		font-size: $base-font-size * 4.1;
+		margin-top: 70px;
+		margin-bottom: 0;
+	}
+}
+
+.bodyH4 {
+	font-size: $base-font-size;
+	margin-top: 0;
+	margin-bottom: 24px;
+
+	@media #{$mq-medium} {
+		font-size: $base-font-size * 1.4;
+	}
+
+	@media #{$mq-large} {
+		margin-bottom: 36px;
+		font-size: $base-font-size * 1.5;
+	}
+
+	@media #{$mq-xlarge} {
+		margin-top: 12px;
+		margin-bottom: 48px;
+		font-size: $base-font-size * 1.925;
+	}
+}
+
+.bodyP {
+	font-size: $base-font-size;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@media #{$mq-medium} {
+		font-size: $base-font-size * 1;
+	}
+
+	@media #{$mq-large} {
+		font-size: $base-font-size * 1.1;
+	}
+
+	@media #{$mq-xlarge} {
+		font-size: $base-font-size * 1.5;
+	}
+}
+
+.bottomText {
+	position: absolute;
+	bottom: 60px;
+	font-family: "GothamBlack";
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.dots {
+	position: absolute;
+	bottom: 15px;
+	max-width: 7px;
+}
+
+.dot1 {
+	height: 3.5px;
+	width: 3.5px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-flex;
+}
+
+.dot2 {
+	height: 4.88px;
+	width: 4.88px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-flex;
+	margin-top: 0.2px;
+	margin-bottom: 0.2px;
+}
+
+.dot3 {
+	height: 6.31px;
+	width: 6.31px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-flex;
+}

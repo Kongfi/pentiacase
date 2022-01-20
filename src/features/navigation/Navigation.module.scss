@@ -1,0 +1,77 @@
+@use "../../_variables.scss" as *;
+
+.nav {
+	display: block;
+	position: fixed;
+	float: left;
+	margin-left: 0;
+	margin-top: 0;
+	height: 100vh;
+	width: 40px;
+	background-color: #1b1b1d;
+
+	@media #{$mq-medium} {
+		width: 50px;
+	}
+
+	@media #{$mq-large} {
+		width: 60px;
+	}
+
+	@media #{$mq-xlarge} {
+		width: 70px;
+	}
+}
+
+.logo {
+	max-width: 45%;
+	margin-top: 15px;
+
+	@media #{$mq-medium} {
+		margin-top: 15px;
+	}
+
+	@media #{$mq-large} {
+		margin-top: 20px;
+	}
+
+	@media #{$mq-xlarge} {
+		margin-top: 20px;
+	}
+}
+
+.navBurger {
+	margin-top: 10px;
+	margin-left: 7px;
+
+	@media #{$mq-medium} {
+	}
+
+	@media #{$mq-large} {
+		margin-top: 528.5px;
+		margin-left: 15px;
+	}
+
+	@media #{$mq-xlarge} {
+		margin-top: px;
+	}
+}
+
+.navBurger span {
+	display: block;
+	width: 25px;
+	height: 2px;
+	margin-bottom: 5px;
+	position: relative;
+
+	background: #cdcdcd;
+	border-radius: 3px;
+}
+
+.navBurger span:first-child {
+	transform-origin: 0% 0%;
+}
+
+.navBurger span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}

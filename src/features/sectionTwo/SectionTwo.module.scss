@@ -1,0 +1,138 @@
+@use "../../_variables.scss" as *;
+
+.bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.wrapper {
+	padding-left: 40px;
+	margin: 0 8%;
+
+	@media #{$mq-medium} {
+		margin: 0 15%;
+	}
+
+	@media #{$mq-large} {
+		margin: 0 20%;
+	}
+
+	@media #{$mq-xlarge} {
+		margin: 0 25%;
+		padding-left: 80px;
+	}
+}
+
+.articleSection {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	margin-top: 40px;
+
+	@media #{$mq-medium} {
+	}
+
+	@media #{$mq-large} {
+		flex-wrap: nowrap;
+	}
+
+	@media #{$mq-xlarge} {
+		margin-top: 0;
+	}
+}
+
+.articleLeft {
+	float: left;
+	width: 100%;
+
+	@media #{$mq-medium} {
+	}
+
+	@media #{$mq-large} {
+	}
+
+	@media #{$mq-xlarge} {
+		width: 30%;
+	}
+}
+
+.articleRight {
+	width: 100%;
+
+	@media #{$mq-medium} {
+	}
+
+	@media #{$mq-large} {
+	}
+
+	@media #{$mq-xlarge} {
+		width: 30%;
+	}
+}
+
+.img {
+	max-width: 40%;
+}
+
+.bodyH2 {
+	font-size: $base-font-size;
+	font-family: "GothamBlack";
+
+	@media #{$mq-medium} {
+		font-size: $base-font-size * 1.4;
+	}
+
+	@media #{$mq-large} {
+		margin-bottom: 36px;
+		font-size: $base-font-size * 1.5;
+	}
+
+	@media #{$mq-xlarge} {
+		margin-top: 12px;
+		margin-bottom: 40px;
+		font-size: $base-font-size * 3;
+	}
+}
+
+.bodyH6 {
+	font-size: $base-font-size;
+	font-family: "GothamBlack";
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+	@media #{$mq-medium} {
+		font-size: $base-font-size * 1.4;
+	}
+
+	@media #{$mq-large} {
+		margin-bottom: 36px;
+		font-size: $base-font-size * 1.5;
+	}
+
+	@media #{$mq-xlarge} {
+		margin-top: 12px;
+		margin-bottom: 40px;
+		font-size: $base-font-size * 1.6;
+	}
+}
+
+.bodyP {
+	font-size: $base-font-size;
+	margin-top: 0;
+	margin-bottom: 25px;
+
+	@media #{$mq-medium} {
+		font-size: $base-font-size * 1;
+	}
+
+	@media #{$mq-large} {
+		font-size: $base-font-size * 1.1;
+	}
+
+	@media #{$mq-xlarge} {
+		font-size: $base-font-size * 1.2;
+	}
+}
